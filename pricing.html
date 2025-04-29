@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans - Growvy</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+        .main-header { background: linear-gradient(90deg, #007BFF, #00c6ff); padding: 20px 40px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .logo { font-size: 2rem; font-weight: bold; color: white; }
+        .navbar { display: flex; }
+        .nav-links { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; }
+        .nav-links a { text-decoration: none; color: white; font-weight: 600; transition: color 0.3s ease; }
+        .nav-links a:hover, .nav-links a.active { color: #ffeb3b; }
+
+        /* Pricing Section */
+        .pricing-section { padding: 80px 20px; background: #f0f4f8; }
+        .pricing-section:nth-child(even) { background: #ffffff; }
+        .pricing-section h1 { text-align: center; font-size: 2.5rem; margin-bottom: 15px; }
+        .pricing-section p { text-align: center; font-size: 1.1rem; margin-bottom: 50px; color: #666; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .pricing-card { background: white; border: 1px solid #ddd; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .pricing-card:hover { transform: translateY(-10px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+        .pricing-card h3 { margin-bottom: 20px; font-size: 1.5rem; color: #007BFF; }
+        .pricing-card ul { list-style: none; padding: 0; margin: 0 0 25px; }
+        .pricing-card ul li { margin: 12px 0; font-size: 1rem; color: #555; }
+        .pricing-card strong { font-size: 2rem; color: #000; display: block; margin-bottom: 20px; }
+        .btn-primary, .btn-secondary { display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; }
+        .btn-primary { background: linear-gradient(90deg, #007BFF, #00c6ff); color: white; }
+        .btn-primary:hover { background: linear-gradient(90deg, #0056b3, #0088cc); }
+        .btn-secondary { background: linear-gradient(90deg, #28a745, #85e085); color: white; }
+        .btn-secondary:hover { background: linear-gradient(90deg, #1e7e34, #66cc66); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">Growvy</div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Recruitment Solutions Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h1>Recruitment Solutions</h1>
+            <p>Find the best talent faster with our powerful recruitment packages.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter Hire</h3>
+                    <ul>
+                        <li>Access to 10,000+ CVs</li>
+                        <li>Basic filtering tools</li>
+                        <li>Email support</li>
+                    </ul>
+                    <strong>$99/month</strong>
+                    <a href="signup.html" class="btn-secondary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Professional Recruit</h3>
+                    <ul>
+                        <li>Access to 30,000+ CVs</li>
+                        <li>Advanced filtering & AI matching</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <strong>$249/month</strong>
+                    <a href="signup.html" class="btn-secondary">Choose Plan</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise Hiring</h3>
+                    <ul>
+                        <li>Unlimited CV access</li>
+                        <li>Custom hiring campaigns</li>
+                        <li>Dedicated account manager</li>
+                    </ul>
+                    <strong>Contact Us</strong>
+                    <a href="contact.html" class="btn-secondary">Talk to Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-commerce Solutions Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h1>E-commerce Solutions</h1>
+            <p>Launch and grow your online store effortlessly with our tailored plans.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter Store</h3>
+                    <ul>
+                        <li>Basic website setup</li>
+                        <li>5 product listings</li>
+                        <li>Email support</li>
+                    </ul>
+                    <strong>$199 one-time</strong>
+                    <a href="signup.html" class="btn-primary">Launch Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Business Store</h3>
+                    <ul>
+                        <li>Custom design</li>
+                        <li>50 product listings</li>
+                        <li>SEO optimization</li>
+                    </ul>
+                    <strong>$799 one-time</strong>
+                    <a href="signup.html" class="btn-primary">Launch Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise Store</h3>
+                    <ul>
+                        <li>Full branding package</li>
+                        <li>Unlimited products</li>
+                        <li>Dedicated success manager</li>
+                    </ul>
+                    <strong>Custom Pricing</strong>
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
